@@ -3,7 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'My Site',
+  title: '大反派',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
@@ -28,7 +28,18 @@ const config: Config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
+  plugins: [
+    [
+      '@docusaurus/plugin-ideal-image',
+      {
+        quality: 70,
+        max: 1030, // max resized image's size.
+        min: 640, // min resized image's size. if original is lower, use that size.
+        steps: 2, // the max number of images generated between min and max (inclusive)
+        disableInDev: false,
+      },
+    ],
+  ],
   presets: [
     [
       'classic',
@@ -58,10 +69,11 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: '大反派',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: '大反派 Logo',
+        // src: 'img/logo.svg',
+        src: 'android-chrome-256x256.png'
       },
       items: [
         {
@@ -72,7 +84,7 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/cbtpro',
           label: 'GitHub',
           position: 'right',
         },
