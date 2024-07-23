@@ -25,8 +25,17 @@ import { PlaygroundCardsRow } from '@site/src/components/Playground';
 
 <PlaygroundCardsRow />
 
+
+## 使用react组件
 import Highlight from '@site/src/components/Highlight';
 
-## 引入组件
-
 <Highlight color="#25c2a0">Docusaurus green</Highlight>
+
+## 使用vue组件
+
+import { uvc } from 'use-vue-component' 
+import Text from '@site/src/components/text.vue'
+
+export const HelloWorld = uvc(Text)
+
+<HelloWorld />

@@ -39,6 +39,12 @@ const config: Config = {
         disableInDev: false,
       },
     ],
+    [
+      'docusaurus-plugin-usevue',
+      {
+        name: 'usevue'
+      }
+    ],
   ],
   presets: [
     [
