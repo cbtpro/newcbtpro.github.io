@@ -3,6 +3,8 @@
 </template>
 
 <script>
+import { ref, toRefs, watch } from 'vue'
+
 export default {
   props: {
     data: {
@@ -10,9 +12,16 @@ export default {
       default: 'john'
     }
   },
-  setup() {
+  setup(props) {
+    const { data } = toRefs(props)
+    const text = ref(data.value)
+    watch(data, (value, oldValue) => {
+      if (value !== oldValue) {
+        text.value = value
+      }
+    })
     return {
-      text: 'peter1'
+      text
     }
   },
 };

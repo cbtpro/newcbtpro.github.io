@@ -33,9 +33,37 @@ import Highlight from '@site/src/components/Highlight';
 
 ## 使用vue组件
 
-import { uvc } from 'use-vue-component' 
-import Text from '@site/src/components/text.vue'
+```js
+import { uvc } from '@site/src/plugins/use-vue-component/uvc.esm.js'
+
+import Text from '@site/src/components/vue-demo/text.vue'
 
 export const HelloWorld = uvc(Text)
 
-<HelloWorld />
+<HelloWorld data={'peter'} />
+```
+
+import { uvc } from '@site/src/plugins/use-vue-component/uvc.esm.js'
+
+import Text from '@site/src/components/vue-demo/text.vue'
+
+export const HelloWorld = uvc(Text)
+
+<HelloWorld data={'peter'} />
+
+## 使用vue v3组件
+
+```js
+import { uvc } from '@site/src/plugins/use-vue-component/uvc.esm.js'
+import TextV3 from '@site/src/components/vue-demo/textv3.vue'
+
+export const TextV3Demo = uvc(TextV3)
+
+<TextV3Demo data={'Tracy'} />
+```
+
+import TextV3 from '@site/src/components/vue-demo/textv3.vue'
+
+export const TextV3Demo = uvc(TextV3)
+
+<TextV3Demo data={'Tracy'} />
