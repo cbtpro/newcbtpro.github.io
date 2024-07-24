@@ -3,6 +3,8 @@
   "extends": "@docusaurus/tsconfig",
   "compilerOptions": {
     "baseUrl": ".",
+    // vue文件不能有输出，解决控制台报错
+    "noEmit": false,
     "types": [
       "@docusaurus/plugin-ideal-image"
     ],
