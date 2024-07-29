@@ -1,0 +1,24 @@
+{
+  "name": "@cbtpro/docusaurus-plugin-usevue",
+  "version": "0.0.1",
+  "description": "在docusaurus中使用vue3组件",
+  "main": "dist/usevue.cjs.js",
+  "scripts": {
+    "build": "rollup --config"
+  },
+  "keywords": [
+    "docusaurus",
+    "docusaurus-plugin",
+    "vue"
+  ],
+  "author": "cbtpro",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "sass-loader": "^14.2.1",
+    "ts-loader": "^9.5.1",
+    "vue": "^3.4.33",
+    "vue-loader": "^17.4.2",
+    "vue-style-loader": "^4.1.3"
+  }
+}

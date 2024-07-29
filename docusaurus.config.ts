@@ -47,8 +47,9 @@ const config: Config = {
     //   }
     // ],
     [
-      // path.resolve(__dirname, 'src/plugins/docusaurus-plugin-usevue'),
-      path.resolve(__dirname,'src/plugins/docusaurus-plugin-usevue/usevue.cjs.js'),
+      // 'docusaurus-plugin-usevue',
+      path.resolve(__dirname, 'src/plugins/docusaurus-plugin-usevue'),
+      // path.resolve(__dirname,'src/plugins/docusaurus-plugin-usevue/usevue.cjs.js'),
       {
         name: 'usevue'
       },

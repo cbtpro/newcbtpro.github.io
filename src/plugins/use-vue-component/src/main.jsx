@@ -9,13 +9,16 @@ export function uvc(component) {
       super(props);
     }
     componentDidMount() {
-      this.app = createApp(h(component, this.props));
+      const createMyApp = () => createApp(h(component, this.props));
+      this.app = createMyApp();
       if (this.dom) {
         this.app.mount(this.dom)
       }
     }
     render() {
-      return(<div ref={(dom) => { this.dom = dom }}></div>)
+      return React.createElement('div', {
+        ref: (dom) => { this.dom = dom },
+      })
     }
     componentWillUnmount() {
       if (this.app) {

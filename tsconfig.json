@@ -4,7 +4,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     // vue文件不能有输出，解决控制台报错
-    "noEmit": false,
+    // "noEmit": true,
     "types": [
       "@docusaurus/plugin-ideal-image"
     ],

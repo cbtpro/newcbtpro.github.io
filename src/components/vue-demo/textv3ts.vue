@@ -2,12 +2,13 @@
   <div class="red">hello world, this is {{ text }}</div>
 </template>
 
-<script name="text-v3-ts1" setup lang="ts">
+<script setup lang="ts">
 import { ref, toRefs, watch } from "vue";
 
 defineOptions({
-  name: 'text-v3-ts2'
+  name: 'text-v3-ts1'
 })
+
 const props = withDefaults(
   defineProps<{
     data?: string;
