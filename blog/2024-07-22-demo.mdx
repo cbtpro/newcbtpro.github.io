@@ -34,7 +34,7 @@ import Highlight from '@site/src/components/Highlight';
 ## 使用vue组件
 
 ```js
-import { uvc } from '@site/src/plugins/use-vue-component/uvc.esm.js'
+import { uvc } from '@cbtpro/use-vue-component'
 
 import Text from '@site/src/components/vue-demo/text.vue'
 
@@ -43,7 +43,7 @@ export const HelloWorld = uvc(Text)
 <HelloWorld data={'peter'} />
 ```
 
-import { uvc } from '@site/src/plugins/use-vue-component/index.js'
+import { uvc } from '@cbtpro/use-vue-component'
 
 import Text from '@site/src/components/vue-demo/text.vue'
 
@@ -54,7 +54,7 @@ export const HelloWorld = uvc(Text)
 ## 使用vue v3组件
 
 ```js
-import { uvc } from '@site/src/plugins/use-vue-component/uvc.esm.js'
+import { uvc } from '@cbtpro/use-vue-component'
 import TextV3 from '@site/src/components/vue-demo/textv3.vue'
 
 export const TextV3Demo = uvc(TextV3)
@@ -78,8 +78,28 @@ export const MyComponentDemo = uvc(MyComponent)
 <MyComponentDemo />
 ```
 
+```js
 import MyComponent from '@site/src/components/vue-demo/my-component.jsx'
 
 export const MyComponentDemo = uvc(MyComponent)
 
 <MyComponentDemo />
+```
+
+## --使用vue v3 tsx组件--
+
+```js
+import TextV3Tsx from '@site/src/components/vue-demo/textv3tsx.tsx'
+
+export const TextV3TsxDemo = uvc(TextV3Tsx)
+
+<TextV3TsxDemo />
+```
+
+```js
+import MyComponent from '@site/src/components/vue-demo/my-component.jsx'
+
+export const MyComponentDemo = uvc(MyComponent)
+
+<MyComponentDemo />
+```

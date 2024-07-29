@@ -12,9 +12,15 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "rimraf": "rimraf node_modules",
+    "build:usevue": "pnpm --filter \"@cbtpro/docusaurus-plugin-usevue\" build",
+    "rimraf:plugins:node_modules": "pnpm -r --filter=./src/plugins/** run rimraf",
+    "build:plugins": "pnpm -r --filter=./src/plugins/** run build"
   },
   "dependencies": {
+    "@cbtpro/docusaurus-plugin-usevue": "workspace:^",
+    "@cbtpro/use-vue-component": "workspace:^",
     "@docusaurus/core": "3.4.0",
     "@docusaurus/plugin-ideal-image": "^3.4.0",
     "@docusaurus/preset-classic": "3.4.0",

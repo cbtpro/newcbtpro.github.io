@@ -40,6 +40,7 @@ const config: Config = {
         disableInDev: false,
       },
     ],
+    /** 使用npm仓库的 */
     // [
     //   'docusaurus-plugin-usevue',
     //   {
@@ -47,8 +48,8 @@ const config: Config = {
     //   }
     // ],
     [
-      // 'docusaurus-plugin-usevue',
-      path.resolve(__dirname, 'src/plugins/docusaurus-plugin-usevue'),
+      '@cbtpro/docusaurus-plugin-usevue',
+      // path.resolve(__dirname, 'src/plugins/docusaurus-plugin-usevue'),
       // path.resolve(__dirname,'src/plugins/docusaurus-plugin-usevue/usevue.cjs.js'),
       {
         name: 'usevue'

@@ -1,0 +1,1 @@
+"use strict";const{VueLoaderPlugin:e}=require("vue-loader");module.exports=(s,u)=>({name:"docusaurus-plugin-usevue",configureWebpack:(s,u,o)=>({module:{rules:[{test:/\.ts$/,loader:"ts-loader",exclude:/node_modules/,options:{appendTsSuffixTo:[/\.vue$/]}},{test:/\.vue$/,loader:"vue-loader"},{test:/\.scss$/,use:["vue-style-loader","css-loader","sass-loader"]}]},plugins:[new e]})});

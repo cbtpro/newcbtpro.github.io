@@ -4,7 +4,8 @@
   "description": "在docusaurus中使用vue3组件",
   "main": "dist/uvc.esm.js",
   "scripts": {
-    "build": "rollup --config"
+    "build": "rollup --config",
+    "rimraf": "rimraf node_modules"
   },
   "keywords": [
     "docusaurus",
