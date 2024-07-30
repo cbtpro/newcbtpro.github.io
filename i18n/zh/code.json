@@ -1,0 +1,10 @@
+{
+  "hello.world": {
+    "message": "你好世界！",
+    "description": "你好世界！"
+  },
+  "dinosaurs.are.cool": {
+    "message": "Dinosaurs 泰裤辣!",
+    "description": "Dinosaurs 泰裤辣!"
+  }
+}

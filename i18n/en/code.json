@@ -1,0 +1,10 @@
+{
+  "hello.world": {
+    "message": "Hello World!",
+    "description": "Hello World!"
+  },
+  "dinosaurs.are.cool": {
+    "message": "Dinosaurs are cool!",
+    "description": "Dinosaurs are cool!"
+  }
+}

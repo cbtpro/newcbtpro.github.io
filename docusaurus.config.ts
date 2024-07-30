@@ -26,8 +26,25 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'zh',
+    locales: ['zh', 'en'],
+    path: 'i18n',
+    localeConfigs: {
+      zh: {
+        label: '中文',
+        direction: 'ltr',
+        htmlLang: 'zh-CN',
+      },
+      en: {
+        label: 'English',
+        direction: 'ltr',
+        htmlLang: 'en-US',
+      },
+      // 如果不需要重写默认值，可以忽略 locale (例如 fr)
+      fa: {
+        direction: 'rtl',
+      },
+    },
   },
   plugins: [
     [
@@ -65,14 +82,14 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/cbtpro/newcbtpro.github.io/tree/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/cbtpro/newcbtpro.github.io/tree/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -103,6 +120,16 @@ const config: Config = {
           href: 'https://github.com/cbtpro',
           label: 'GitHub',
           position: 'right',
+        },
+        {
+          type: 'localeDropdown',
+          position: 'right',
+          // dropdownItemsAfter: [
+          //   {
+          //     to: 'https://github.com/cbtpro/',
+          //     label: 'Help us translate',
+          //   },
+          // ],
         },
       ],
     },
@@ -144,7 +171,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/cbtpro/newcbtpro.github.io',
             },
           ],
         },
